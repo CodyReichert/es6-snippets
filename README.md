@@ -1,25 +1,18 @@
 # es6-snippets.el
 
-A collection of Emacs' Yasnippets for ECMAScript 6.
+A collection of Yasnippets for ES6 style JavaScript in Emacs.
 
-Most new features and syntax have a snippet, but feel free to create
-an issue or pull-request if one is missing or if there is clashing
-key binding.
+This is _not_ yet an exhaustive list of ES6 features, but I'm adding them as I
+use them. Open an issue if there's one you'd like to see implemented, or if
+one could be named better.
 
-### Snippets
+
+### Available Snippets
 
 *Arrow Functions*
 
 ```
 arw
-```
-
-expands to
-
-```
-($1) => {
-    $0
-}
 ```
 
 *Classes*
@@ -28,26 +21,10 @@ expands to
 class
 ```
 
-expands to
-
-```
-class $1 {
-    $0
-}
-```
-
 *Class Constructor*
 
 ```
 ccs
-```
-
-expands to
-
-```
-constructor($1) {
-    $0
-}
 ```
 
 *Const variables*
@@ -56,22 +33,16 @@ constructor($1) {
 const
 ```
 
-expands to
-
-```
-const $1 = $0;
-```
-
 *Let variables*
 
 ```
 let
 ```
 
-expands to
+*Promises*
 
 ```
-let $1 = $0;
+prom
 ```
 
 *Super methods*
@@ -79,6 +50,3 @@ let $1 = $0;
 ```
 sup
 ```
-
-expands to
-
