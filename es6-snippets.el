@@ -26,8 +26,8 @@
 
 ;;; Code:
 
-(defvar es6-snippets-root (file-name-directory (or (load-file-name)
-                                                   buffer-file-name)))
+(defvar es6-snippets-root (file-name-directory (or load-file-name
+                                                   (buffer-file-name))))
 
 ;;;###autoload
 (defun es6-snippets-initialize ()
