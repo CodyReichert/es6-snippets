@@ -26,23 +26,22 @@
 
 ;;; Code:
 
-(require 'yasnippet)
-
-
-(defvar es6-snippets-root
-  (file-name-directory (or load-file-name (buffer-file-name))))
+(defvar es6-snippets-root (file-name-directory (or (load-file-name)
+                                                   buffer-file-name)))
 
 ;;;###autoload
 (defun es6-snippets-initialize ()
   "Load es6-snippets."
   (let ((snippets-dir (expand-file-name "snippets" es6-snippets-root)))
-    (when (boundp 'yas-snippets-dirs)
-      (add-to-list 'yas-snippets-dirs snippets-dir t))
-    (yas/load-directory snippets-dir)))
+    (when (boundp 'yas-snippet-dirs)
+      (add-to-list 'yas-snippet-dirs snippets-dir t))
+    (yas-load-directory snippets-dir)))
 
 ;;;###autoload
 (eval-after-load 'yasnippet
   '(es6-snippets-initialize))
+
+(require 'yasnippet)
 
 (provide 'es6-snippets)
 ;;; es6-snippets.el ends here
