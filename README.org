@@ -4,7 +4,14 @@
 #+DESCRIPTION: A collection of Yasnippets for writing EcmaScript 2016 in GNU Emacs
 #+LANGUAGE: en
 
-*es6-snippets.el* is a collection of Yanippets for writing EcmaScript 2016 in Emacs.
+*es6-snippets.el* is a collection of [[https://github.com/capitaomorte/yasnippet][Yanippets]] for writing EcmaScript
+2015 in Emacs.
+
+This is almost comprehensive, but snippets are still being changed and
+added.
+
+See the [[https://people.mozilla.org/~jorendorff/es6-draft.html][ES6 Standard draft]] for a full spec.
+
 
 ** Installation
    First get the source:
@@ -13,7 +20,7 @@
      $ git clone git@github.com:codyreichert/es6-snippets ~/.emacs.d/es6-snippets
    #+END_SRC
 
-   Then require them:
+   Then require the package:
 
    #+BEGIN_SRC emacs-lisp
      (add-to-list 'load-path "~/.emacs.d/es6-snippets")
@@ -24,9 +31,9 @@
 
 
 ** Prerequisites
-   Yasnippets needs to be installed and working for you, but other than that you can
-   simply enable es6-snippets, and they should be available in =web-mode=, =js2-mode=,
-   or =js-mode=.
+   Yasnippets needs to be enabled, but once once it is and you've
+   required the package in your init.el, snippets will be available in
+   =web-mode=, =js2-mode=, or =js-mode=.
 
 
 ** Snippets
@@ -58,11 +65,12 @@
 
 
 ** Contributing
-   Please do. Open an issue or a pull request if you need a snippet added, want to discuss
-   changing a key binding, or have any issues.
+   Please do. Open an issue or a pull request if you need a snippet
+   added, want to discuss changing a key binding, or have any issues.
 
-   I know I didn't get to all of them, and there are some I intentionally left off, but I'm 
-   to adding or changing almost all of these.
+   I know I didn't get to all of them, and there are some I
+   intentionally left off, but I'm to adding or changing almost all of
+   these.
 
    - [ ] Shorter bindings. If I can figure out there won't be clashed with the other JavaScript
      Yasnippets, I would like to shorten some of these key bindings.
