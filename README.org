@@ -69,8 +69,7 @@ See the [[https://people.mozilla.org/~jorendorff/es6-draft.html][ES6 Standard dr
    added, want to discuss changing a key binding, or have any issues.
 
    I know I didn't get to all of them, and there are some I
-   intentionally left off, but I'm to adding or changing almost all of
-   these.
+   intentionally left off, but I'm open to adding or changing any snippets.
 
    - [ ] Shorter bindings. If I can figure out there won't be clashed with the other JavaScript
      Yasnippets, I would like to shorten some of these key bindings.
