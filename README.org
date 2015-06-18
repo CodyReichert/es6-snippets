@@ -1,0 +1,70 @@
+#+TITLE: es6-snippets.el
+#+AUTHOR: Cody Reichert
+#+EMAIL: codyreichert@gmail.com
+#+DESCRIPTION: A collection of Yasnippets for writing EcmaScript 2016 in GNU Emacs
+#+LANGUAGE: en
+
+*es6-snippets.el* is a collection of Yanippets for writing EcmaScript 2016 in Emacs.
+
+** Installation
+   First get the source:
+
+   #+BEGIN_SRC sh
+     $ git clone git@github.com:codyreichert/es6-snippets ~/.emacs.d/es6-snippets
+   #+END_SRC
+
+   Then require them:
+
+   #+BEGIN_SRC emacs-lisp
+     (add-to-list 'load-path "~/.emacs.d/es6-snippets")
+     (require 'es6-snippets)
+   #+END_SRC
+
+   /There's plenty of other ways, so do what works best for you/
+
+
+** Prerequisites
+   Yasnippets needs to be installed and working for you, but other than that you can
+   simply enable es6-snippets, and they should be available in =web-mode=, =js2-mode=,
+   or =js-mode=.
+
+
+** Snippets
+
+| Snippet | Name              | Description                     |
+|---------+-------------------+---------------------------------|
+| arw     | arrowFunction     | =($1) => { $0 }=                |
+| cl      | class             | =class $1 { $0 }=               |
+| cle     | classExtends      | =class $1 extends $2 { $0 }=    |
+| ccs     | classConstructor  | =constructor($1) { $0 }=        |
+| const   | constant          | =const $1 = $0;=                |
+| exp     | export            | =export $0;=                    |
+| expd    | exportDefault     | =export default $0;=            |
+| expf    | exportFunction    | =export function $1($2) { $0 }= |
+| forof   | forOfLoop         | =for($1 of $2) { $0 }=          |
+| imp     | import            | =import $0;=                    |
+| let     | let               | =let $1 = $0;=                  |
+| map     | map               | =new Map($0);=                  |
+| prom    | promise           | =new Promise(($1) => { $0 });=  |
+| px      | proxy             | =new Proxy($1, $0);=            |
+| set     | set               | =new Set($0);=                  |
+| spr     | spread            | =(...$1)$0=                     |
+| si      | stringInterpolate | =${$0}=                         |
+| sup     | super             | =super($0)=                     |
+| sym     | symbol            | =Symbol($0);=                   |
+| ts      | templateString    | =`$0`=                          |
+| wmap    | weakMap           | =new WeakMap($0);=              |
+| wset    | weakSet           | =new WeakSet($0);=              |
+
+
+** Contributing
+   Please do. Open an issue or a pull request if you need a snippet added, want to discuss
+   changing a key binding, or have any issues.
+
+   I know I didn't get to all of them, and there are some I intentionally left off, but I'm 
+   to adding or changing almost all of these.
+
+   - [ ] Shorter bindings. If I can figure out there won't be clashed with the other JavaScript
+     Yasnippets, I would like to shorten some of these key bindings.
+   - [ ] Full coverage for EcmaScript 2015
+   - [ ] MELPA package
