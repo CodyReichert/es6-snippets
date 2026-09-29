@@ -1,4 +1,4 @@
-;;; es6-snippets.el --- Yasnippets for ECMAScript 6
+;;; es6-snippets.el --- Yasnippets for ECMAScript 6 -*- lexical-binding: t; -*-
 ;;
 ;; Copyright (C) 2015 Cody Reichert
 ;;
